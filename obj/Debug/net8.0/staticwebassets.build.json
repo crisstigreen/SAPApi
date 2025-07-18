@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "MdQBy2K3mXLoXv5gECGogPnbQFejWNrEJRzqIkyShrs=",
+  "Source": "SAPApi",
+  "BasePath": "_content/SAPApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

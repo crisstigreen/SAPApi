@@ -1,0 +1,865 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "SAPApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Oagc": {
+      "get": {
+        "tags": [
+          "Oagc"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Oacp"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Oacp"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Oacp"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Oacp": {
+        "type": "object",
+        "properties": {
+          "absEntry": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "periodCat": {
+            "type": "string",
+            "nullable": true
+          },
+          "financYear": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "year": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "periodName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subType": {
+            "type": "string",
+            "nullable": true
+          },
+          "periodNum": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fRefDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tRefDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fDueDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tDueDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fTaxDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tTaxDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "logInstanc": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "updateDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "userSign": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "linkAct1": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct2": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct3": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct4": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct5": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct6": {
+            "type": "string",
+            "nullable": true
+          },
+          "comissAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct8": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct9": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct10": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct11": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct12": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct13": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct14": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct15": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct16": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct17": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct18": {
+            "type": "string",
+            "nullable": true
+          },
+          "dfltIncom": {
+            "type": "string",
+            "nullable": true
+          },
+          "exmptIncom": {
+            "type": "string",
+            "nullable": true
+          },
+          "dfltExpn": {
+            "type": "string",
+            "nullable": true
+          },
+          "forgnIncm": {
+            "type": "string",
+            "nullable": true
+          },
+          "ecincome": {
+            "type": "string",
+            "nullable": true
+          },
+          "forgnExpn": {
+            "type": "string",
+            "nullable": true
+          },
+          "dfltRateDi": {
+            "type": "string",
+            "nullable": true
+          },
+          "decresGlAc": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct27": {
+            "type": "string",
+            "nullable": true
+          },
+          "dftStockOb": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct19": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct20": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct21": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct22": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct23": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct24": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct25": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct26": {
+            "type": "string",
+            "nullable": true
+          },
+          "incresGlAc": {
+            "type": "string",
+            "nullable": true
+          },
+          "rturnngAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "cogmAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "alocCstAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "variancAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "pricDifAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "cdownPymnt": {
+            "type": "string",
+            "nullable": true
+          },
+          "vdownPymnt": {
+            "type": "string",
+            "nullable": true
+          },
+          "cboErcvble": {
+            "type": "string",
+            "nullable": true
+          },
+          "cboEonClct": {
+            "type": "string",
+            "nullable": true
+          },
+          "cboEpresnt": {
+            "type": "string",
+            "nullable": true
+          },
+          "cboEdiscnt": {
+            "type": "string",
+            "nullable": true
+          },
+          "cunpaidBoE": {
+            "type": "string",
+            "nullable": true
+          },
+          "vboEpayble": {
+            "type": "string",
+            "nullable": true
+          },
+          "vasstBoEpy": {
+            "type": "string",
+            "nullable": true
+          },
+          "copenDebts": {
+            "type": "string",
+            "nullable": true
+          },
+          "vopenDebts": {
+            "type": "string",
+            "nullable": true
+          },
+          "purchseAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "paReturnAc": {
+            "type": "string",
+            "nullable": true
+          },
+          "paOffsetAc": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct28": {
+            "type": "string",
+            "nullable": true
+          },
+          "exDiffAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "balanceAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "bnkChgAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct29": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkAct30": {
+            "type": "string",
+            "nullable": true
+          },
+          "incmAcct": {
+            "type": "string",
+            "nullable": true
+          },
+          "expnAcct": {
+            "type": "string",
+            "nullable": true
+          },
+          "vatRevAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "expClrAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "expOfstAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "costRevAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "repomoAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "wipVarAcct": {
+            "type": "string",
+            "nullable": true
+          },
+          "saleVatOff": {
+            "type": "string",
+            "nullable": true
+          },
+          "purcVatOff": {
+            "type": "string",
+            "nullable": true
+          },
+          "dpmSalAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "dpmPurAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "expVarAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "costOffAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "ecexepnses": {
+            "type": "string",
+            "nullable": true
+          },
+          "stockAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "dflInPrcss": {
+            "type": "string",
+            "nullable": true
+          },
+          "dfltInCstm": {
+            "type": "string",
+            "nullable": true
+          },
+          "dfltProfit": {
+            "type": "string",
+            "nullable": true
+          },
+          "dfltLoss": {
+            "type": "string",
+            "nullable": true
+          },
+          "vassets": {
+            "type": "string",
+            "nullable": true
+          },
+          "stockRvAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "stkRvOfAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "wipAcct": {
+            "type": "string",
+            "nullable": true
+          },
+          "dfltCard": {
+            "type": "string",
+            "nullable": true
+          },
+          "shpdGdsAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "glRvOffAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "overpayAp": {
+            "type": "string",
+            "nullable": true
+          },
+          "undrpayAp": {
+            "type": "string",
+            "nullable": true
+          },
+          "overpayAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "undrpayAr": {
+            "type": "string",
+            "nullable": true
+          },
+          "arcmact": {
+            "type": "string",
+            "nullable": true
+          },
+          "arcmexpAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "arcmfrnAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "arcmeuact": {
+            "type": "string",
+            "nullable": true
+          },
+          "apcmact": {
+            "type": "string",
+            "nullable": true
+          },
+          "apcmfrnAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "apcmeuact": {
+            "type": "string",
+            "nullable": true
+          },
+          "negStckAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "stkInTnAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "glgainXdif": {
+            "type": "string",
+            "nullable": true
+          },
+          "gllossXdif": {
+            "type": "string",
+            "nullable": true
+          },
+          "amountDiff": {
+            "type": "string",
+            "nullable": true
+          },
+          "slfInvIncm": {
+            "type": "string",
+            "nullable": true
+          },
+          "slfInvExpn": {
+            "type": "string",
+            "nullable": true
+          },
+          "onHoldAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "plaAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "icclrAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "occlrAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "purBalAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "whIcenAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "whOcenAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "salDpmInt": {
+            "type": "string",
+            "nullable": true
+          },
+          "purDpmInt": {
+            "type": "string",
+            "nullable": true
+          },
+          "exrateOnDt": {
+            "type": "string",
+            "nullable": true
+          },
+          "userSign2": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "eurecvAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "eupayAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "wipOffset": {
+            "type": "string",
+            "nullable": true
+          },
+          "stockOffst": {
+            "type": "string",
+            "nullable": true
+          },
+          "dunIntrst": {
+            "type": "string",
+            "nullable": true
+          },
+          "dunFee": {
+            "type": "string",
+            "nullable": true
+          },
+          "snapShotId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tdsinterst": {
+            "type": "string",
+            "nullable": true
+          },
+          "tdscharges": {
+            "type": "string",
+            "nullable": true
+          },
+          "srvTaxClr": {
+            "type": "string",
+            "nullable": true
+          },
+          "arconDiffG": {
+            "type": "string",
+            "nullable": true
+          },
+          "arconDiffL": {
+            "type": "string",
+            "nullable": true
+          },
+          "apconDiffG": {
+            "type": "string",
+            "nullable": true
+          },
+          "apconDiffL": {
+            "type": "string",
+            "nullable": true
+          },
+          "glconDiffG": {
+            "type": "string",
+            "nullable": true
+          },
+          "glconDiffL": {
+            "type": "string",
+            "nullable": true
+          },
+          "freeChrgSa": {
+            "type": "string",
+            "nullable": true
+          },
+          "freeChrgPu": {
+            "type": "string",
+            "nullable": true
+          },
+          "tdsfee": {
+            "type": "string",
+            "nullable": true
+          },
+          "resRevenue": {
+            "type": "string",
+            "nullable": true
+          },
+          "resExpense": {
+            "type": "string",
+            "nullable": true
+          },
+          "resSalesCr": {
+            "type": "string",
+            "nullable": true
+          },
+          "resPurchCr": {
+            "type": "string",
+            "nullable": true
+          },
+          "resNotInv": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp1": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp2": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp3": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp4": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp5": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp6": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp7": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp8": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdExp9": {
+            "type": "string",
+            "nullable": true
+          },
+          "resStdEx10": {
+            "type": "string",
+            "nullable": true
+          },
+          "resWipAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "resScrapAc": {
+            "type": "string",
+            "nullable": true
+          },
+          "wipOffPlAc": {
+            "type": "string",
+            "nullable": true
+          },
+          "resOffPlAc": {
+            "type": "string",
+            "nullable": true
+          },
+          "erdinAract": {
+            "type": "string",
+            "nullable": true
+          },
+          "erdinApact": {
+            "type": "string",
+            "nullable": true
+          },
+          "csdinAract": {
+            "type": "string",
+            "nullable": true
+          },
+          "csdinApact": {
+            "type": "string",
+            "nullable": true
+          },
+          "gstinAct": {
+            "type": "string",
+            "nullable": true
+          },
+          "gstinterst": {
+            "type": "string",
+            "nullable": true
+          },
+          "gstcharges": {
+            "type": "string",
+            "nullable": true
+          },
+          "gstfee": {
+            "type": "string",
+            "nullable": true
+          },
+          "wtinAract": {
+            "type": "string",
+            "nullable": true
+          },
+          "wtinApact": {
+            "type": "string",
+            "nullable": true
+          },
+          "wtexDifAct": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
